@@ -1,0 +1,749 @@
+@import "tailwindcss";
+
+/* ======================================
+   SPACE THEME COLOR PALETTE
+   ====================================== */
+
+:root {
+  /* Background colors */
+  --bg-void: #000000;
+  --bg-deep: #050510;
+  --bg-space: #0a0a1a;
+  --bg-nebula: #0d1025;
+
+  /* Text colors - HIGH CONTRAST for readability */
+  --text-primary: #ffffff;
+  /* Pure white - maximum contrast */
+  --text-secondary: #cbd5e1;
+  /* Light gray - very readable on dark */
+  --text-muted: #94a3b8;
+  /* Medium gray - still readable */
+  --text-accent: #93c5fd;
+  /* Soft blue - links, accents */
+
+  /* Cosmic accent colors */
+  --cosmic-blue: #60a5fa;
+  --cosmic-purple: #a78bfa;
+  --cosmic-pink: #f472b6;
+  --cosmic-cyan: #22d3ee;
+  --cosmic-teal: #2dd4bf;
+  --cosmic-orange: #fb923c;
+
+  /* Glow colors */
+  --glow-blue: rgba(96, 165, 250, 0.5);
+  --glow-purple: rgba(167, 139, 250, 0.5);
+  --glow-cyan: rgba(34, 211, 238, 0.5);
+
+  /* Border colors */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.15);
+  --border-accent: rgba(96, 165, 250, 0.3);
+}
+
+/* ======================================
+   TYPOGRAPHY SYSTEM
+   ====================================== */
+
+body {
+  font-family: var(--font-primary), system-ui, -apple-system, sans-serif;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+/* ======================================
+   COSMIC BACKGROUND IMAGE
+   ====================================== */
+
+.cosmic-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-image: url('/images/background/cosmic-nebula-space-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Enable smooth transitions for parallax */
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+
+  /* Scale up slightly to allow for parallax movement without showing edges */
+  transform: scale(1.1);
+}
+
+/* Add a subtle overlay to ensure text readability */
+.cosmic-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+/* Global Background Vignette */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* Base lighting overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+  z-index: 40;
+}
+
+/* Hide default cursor on all elements */
+*,
+*::before,
+*::after {
+  cursor: none !important;
+}
+
+/* Show cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+  body,
+  *,
+  *::before,
+  *::after {
+    cursor: auto !important;
+  }
+}
+
+/* Display headings - Space themed Orbitron font */
+.font-display {
+  font-family: var(--font-display), var(--font-primary), sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Mono text for code/technical */
+.font-mono {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+/* Paragraph styles */
+p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Link styles */
+a {
+  color: var(--cosmic-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--cosmic-cyan);
+}
+
+/* ======================================
+   TEXT COLOR UTILITIES
+   ====================================== */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}
+
+.text-cosmic-blue {
+  color: var(--cosmic-blue);
+}
+
+.text-cosmic-purple {
+  color: var(--cosmic-purple);
+}
+
+.text-cosmic-pink {
+  color: var(--cosmic-pink);
+}
+
+.text-cosmic-cyan {
+  color: var(--cosmic-cyan);
+}
+
+.text-cosmic-teal {
+  color: var(--cosmic-teal);
+}
+
+.text-cosmic-orange {
+  color: var(--cosmic-orange);
+}
+
+/* ======================================
+   GRADIENT TEXT
+   ====================================== */
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--cosmic-blue), var(--cosmic-purple), var(--cosmic-pink));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+}
+
+.gradient-text-cyan {
+  background: linear-gradient(135deg, var(--cosmic-cyan), var(--cosmic-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ======================================
+   SCROLL ANIMATIONS
+   ====================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+@keyframes scaleInGlow {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scale-in-glow {
+  animation: scaleInGlow 0.7s ease-out forwards;
+}
+
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.blur-in {
+  animation: blurIn 0.8s ease-out forwards;
+}
+
+/* ======================================
+   FLOATING ANIMATIONS
+   ====================================== */
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-slow {
+  animation: float 5s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* ======================================
+   GRADIENT ANIMATION
+   ====================================== */
+
+@keyframes gradientFlow {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientFlow 4s ease infinite;
+}
+
+/* ======================================
+   GLOW EFFECTS
+   ====================================== */
+
+.glow-blue {
+  box-shadow: 0 0 20px var(--glow-blue), 0 0 40px rgba(96, 165, 250, 0.2);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px var(--glow-purple), 0 0 40px rgba(167, 139, 250, 0.2);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 10px var(--glow-blue), 0 0 20px rgba(96, 165, 250, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px var(--glow-cyan), 0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+/* ======================================
+   GLASSMORPHISM EFFECTS - Premium Glass
+   ====================================== */
+
+/* Glass card with blur effect */
+.card-glass {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Stronger glass effect for cards */
+.card-glass-strong {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Section with blur overlay */
+.section-glass {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Section with stronger blur */
+.section-blur {
+  position: relative;
+}
+
+.section-blur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: -1;
+}
+
+/* ======================================
+   CARD HOVER EFFECTS
+   ====================================== */
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* ======================================
+   SHIMMER TEXT
+   ====================================== */
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg,
+      var(--text-secondary) 0%,
+      var(--text-primary) 50%,
+      var(--text-secondary) 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* ======================================
+   NEON TEXT
+   ====================================== */
+
+@keyframes neonPulse {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 4px var(--cosmic-cyan),
+      0 0 10px var(--cosmic-cyan),
+      0 0 20px rgba(34, 211, 238, 0.5);
+  }
+
+  50% {
+    text-shadow:
+      0 0 2px var(--cosmic-cyan),
+      0 0 5px var(--cosmic-cyan),
+      0 0 10px rgba(34, 211, 238, 0.3);
+  }
+}
+
+.neon-text {
+  color: var(--text-primary);
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+/* ======================================
+   HOLOGRAPHIC TEXT
+   ====================================== */
+
+@keyframes holographic {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.holographic-text {
+  background: linear-gradient(135deg,
+      var(--cosmic-blue) 0%,
+      var(--cosmic-purple) 25%,
+      var(--cosmic-pink) 50%,
+      var(--cosmic-cyan) 75%,
+      var(--cosmic-blue) 100%);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: holographic 5s ease infinite;
+}
+
+/* ======================================
+   GLITCH EFFECT
+   ====================================== */
+
+@keyframes glitch1 {
+
+  0%,
+  100% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+}
+
+@keyframes glitch2 {
+
+  0%,
+  100% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, -2px);
+  }
+
+  60% {
+    transform: translate(-2px, 2px);
+  }
+
+  80% {
+    transform: translate(-2px, -2px);
+  }
+}
+
+/* ======================================
+   PULSING EFFECTS
+   ====================================== */
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(96, 165, 250, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0);
+  }
+}
+
+.pulse-ring {
+  animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ======================================
+   SMOOTH SCROLL
+   ====================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================================
+   SELECTION STYLE
+   ====================================== */
+
+::selection {
+  background: rgba(96, 165, 250, 0.3);
+  color: var(--text-primary);
+}
+
+/* ======================================
+   SCROLLBAR STYLING
+   ====================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ======================================
+   IFRAMES
+   ====================================== */
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ======================================
+   HERO DECORATIVE ELEMENTS
+   ====================================== */
+
+.ultra-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.scan-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cosmic-cyan), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: scan 3s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+.pulse-glow {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--cosmic-blue);
+  filter: blur(60px);
+  opacity: 0.15;
+  z-index: -1;
+  animation: pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1.5) translate(10px, -20px);
+    opacity: 0.2;
+  }
+}
+
+.hero-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  transition: background 0.3s ease;
+}
+
+.stat-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}

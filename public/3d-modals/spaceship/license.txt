@@ -1,0 +1,11 @@
+Model Information:
+* title:	spaceship
+* source:	https://sketchfab.com/3d-models/spaceship-781e531c00d94c9e89dcc8ad9b967d87
+* author:	박용진 (https://sketchfab.com/easyidpyj)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "spaceship" (https://sketchfab.com/3d-models/spaceship-781e531c00d94c9e89dcc8ad9b967d87) by 박용진 (https://sketchfab.com/easyidpyj) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
