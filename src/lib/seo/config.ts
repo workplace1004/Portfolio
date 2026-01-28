@@ -2,8 +2,8 @@
 // Following Google's SEO Starter Guide best practices
 
 export const siteConfig = {
-    name: "Hugo Marangao Souza - Senior Software Engineer Portfolio",
-    title: "Hugo Marangao Souza | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
+    name: "Andriy Zherukha - Senior Software Engineer Portfolio",
+    title: "Andriy Zherukha | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
     description: "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
     url: "https://hugomarangao.dev",
     ogImage: "/images/seo/og-image.png",
@@ -19,23 +19,23 @@ export const siteConfig = {
         "Mobile App Developer",
         "Web Developer",
         "Portfolio",
-        "Hugo Marangao Souza",
-        "Dublin Software Engineer"
+        "Andriy Zherukha",
+        "Lviv Software Engineer"
     ],
     author: {
-        name: "Hugo Marangao Souza",
-        email: "hugomarangao.in@hotmail.com",
+        name: "Andriy Zherukha",
+        email: "freelancer.zherukha@gmail.com",
         url: "https://hugomarangao.dev"
     },
     social: {
-        github: "https://github.com/HugoMarangao",
+        github: "https://github.com/andriy1004",
         linkedin: "https://www.linkedin.com/in/hugo-marangao-17ab44219/"
     }
 };
 
 export const pages = {
     home: {
-        title: "Hugo Marangao Souza | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
+        title: "Andriy Zherukha | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
         description: "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. View my portfolio of successful projects.",
         keywords: [
             "senior software engineer portfolio",
@@ -47,7 +47,7 @@ export const pages = {
             "web development",
             "node.js developer",
             "python developer",
-            "hugo marangao souza",
+            "andriy zherukha",
             "dublin software engineer"
         ],
         canonical: "/",
@@ -95,7 +95,7 @@ export const structuredData = {
     person: {
         "@context": "https://schema.org",
         "@type": "Person",
-        name: "Hugo Marangao Souza",
+        name: "Andriy Zherukha",
         jobTitle: "Senior Software Engineer",
         description: "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms",
         url: siteConfig.url,

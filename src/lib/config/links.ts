@@ -11,12 +11,12 @@ export const links = {
     website: "https://hugomarangao.dev",
 
     // Social Media
-    github: "https://github.com/HugoMarangao",
+    github: "https://github.com/andriy1004",
     linkedin: "https://www.linkedin.com/in/hugo-marangao-17ab44219/",
 
     // Contact
-    email: "hugomarangao.in@hotmail.com",
-    emailHref: "mailto:hugomarangao.in@hotmail.com",
+    email: "freelancer.zherukha@gmail.com",
+    emailHref: "mailto:freelancer.zherukha@gmail.com",
 
     // Internal Pages
     home: "/",
@@ -39,14 +39,14 @@ export const socialMedia = [
         name: "GitHub",
         url: links.github,
         icon: "github", // For icon components
-        username: "@HugoMarangao",
+        username: "@andriy1004",
         color: "#333",
     },
     {
         name: "LinkedIn",
         url: links.linkedin,
         icon: "linkedin",
-        username: "Hugo Marangao Souza",
+        username: "Andriy Zherukha",
         color: "#0077B5",
     },
 ];
@@ -55,9 +55,9 @@ export const socialMedia = [
 export const contact = {
     email: links.email,
     emailHref: links.emailHref,
-    phone: "+353 83 042 4512", // Add your phone number if you want
-    phoneHref: "tel:+353830424512",
-    location: "Dublin, Ireland", // Your location
+    phone: "+380 99 908 1714", // Add your phone number if you want
+    phoneHref: "tel:+380999081714",
+    location: "Lviv, Ukraine", // Your location
 };
 
 // Navigation Links

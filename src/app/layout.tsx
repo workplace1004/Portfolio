@@ -30,13 +30,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   // Primary Meta Tags
   title: {
-    default: "Hugo Marangao Souza | Senior Software Engineer - Full Stack Developer",
-    template: "%s | Hugo Marangao Souza",
+    default: "Andriy Zherukha | Senior Software Engineer - Full Stack Developer",
+    template: "%s | Andriy Zherukha",
   },
   description:
-    "Hugo Marangao Souza is a Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP. Based in Dublin, Ireland.",
+    "Andriy Zherukha is a Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP. Based in Lviv, Ukraine.",
   keywords: [
-    "Hugo Marangao Souza",
+    "Andriy Zherukha",
     "Senior Software Engineer",
     "Full Stack Developer",
     "React Developer",
@@ -49,21 +49,21 @@ export const metadata: Metadata = {
     "NestJS Developer",
     "Mobile Developer",
     "Web Developer",
-    "Dublin Software Engineer",
-    "Ireland Software Engineer",
+    "Lviv Software Engineer",
+    "Ukraine Software Engineer",
     "Cross-Platform Mobile Apps",
   ],
-  authors: [{ name: "Hugo Marangao Souza", url: "https://hugomarangao.dev" }],
-  creator: "Hugo Marangao Souza",
-  publisher: "Hugo Marangao Souza",
+  authors: [{ name: "Andriy Zherukha", url: "https://hugomarangao.dev" }],
+  creator: "Andriy Zherukha",
+  publisher: "Andriy Zherukha",
 
   // Open Graph Meta Tags (for social sharing)
   openGraph: {
     type: "website",
     locale: "en_IE",
     url: "https://hugomarangao.dev",
-    siteName: "Hugo Marangao Souza Portfolio",
-    title: "Hugo Marangao Souza | Senior Software Engineer - Full Stack Developer",
+    siteName: "Andriy Zherukha Portfolio",
+    title: "Andriy Zherukha | Senior Software Engineer - Full Stack Developer",
   description:
     "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.",
     images: [
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Hugo Marangao Souza - Senior Software Engineer Portfolio",
+        alt: "Andriy Zherukha - Senior Software Engineer Portfolio",
       },
     ],
   },
@@ -79,11 +79,11 @@ export const metadata: Metadata = {
   // Twitter Card Meta Tags
   twitter: {
     card: "summary_large_image",
-    title: "Hugo Marangao Souza | Senior Software Engineer",
+    title: "Andriy Zherukha | Senior Software Engineer",
     description:
       "Senior Software Engineer | React, React Native, Flutter, Node.js, Python Expert",
     images: ["/og-image.png"],
-    creator: "@HugoMarangao",
+    creator: "@andriy1004",
   },
 
   // Robots and Crawling
@@ -132,17 +132,17 @@ export const metadata: Metadata = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Hugo Marangao Souza",
+  name: "Andriy Zherukha",
   jobTitle: "Senior Software Engineer",
   description:
     "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
   url: "https://hugomarangao.dev",
-  email: "hugomarangao.in@hotmail.com",
-  telephone: "+353830424512",
+  email: "freelancer.zherukha@gmail.com",
+  telephone: "+380999081714",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Dublin",
-    addressCountry: "Ireland",
+    addressLocality: "Lviv",
+    addressCountry: "Ukraine",
   },
   alumniOf: [
     {
@@ -182,29 +182,29 @@ const personSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Hugo Marangao Souza Portfolio",
+  name: "Andriy Zherukha Portfolio",
   url: "https://hugomarangao.dev",
   description:
-    "Portfolio website of Hugo Marangao Souza, a Senior Software Engineer specializing in full stack web and mobile development.",
+    "Portfolio website of Andriy Zherukha, a Senior Software Engineer specializing in full stack web and mobile development.",
   author: {
     "@type": "Person",
-    name: "Hugo Marangao Souza",
+    name: "Andriy Zherukha",
   },
 };
 
 const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Hugo Marangao Souza - Software Engineering Services",
+  name: "Andriy Zherukha - Software Engineering Services",
   description:
     "Professional software engineering services specializing in full stack web and mobile development, scalable applications, and cloud-native solutions.",
   provider: {
     "@type": "Person",
-    name: "Hugo Marangao Souza",
+    name: "Andriy Zherukha",
   },
   areaServed: {
     "@type": "Country",
-    name: "Ireland",
+    name: "Ukraine",
   },
   serviceType: [
     "Mobile App Development",
