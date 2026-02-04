@@ -2,9 +2,9 @@
 // Following Google's SEO Starter Guide best practices
 
 export const siteConfig = {
-    name: "Andriy Zherukha - Senior Software Engineer Portfolio",
-    title: "Andriy Zherukha | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
-    description: "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
+    name: "Eduardo Oliveira - Senior Software Engineer Portfolio",
+    title: "Eduardo Oliveira | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
+    description: "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
     url: "https://hugomarangao.dev",
     ogImage: "/images/seo/og-image.png",
     keywords: [
@@ -19,24 +19,25 @@ export const siteConfig = {
         "Mobile App Developer",
         "Web Developer",
         "Portfolio",
-        "Andriy Zherukha",
-        "Lviv Software Engineer"
+        "Eduardo Oliveira",
+        "Brazil Software Engineer",
+        "Suzano Software Engineer"
     ],
     author: {
-        name: "Andriy Zherukha",
-        email: "freelancer.zherukha@gmail.com",
+        name: "Eduardo Oliveira",
+        email: "eduardooliveiira3077@gmail.com",
         url: "https://hugomarangao.dev"
     },
     social: {
-        github: "https://github.com/andriy1004",
-        linkedin: "https://www.linkedin.com/in/hugo-marangao-17ab44219/"
+        github: "https://github.com/eduardo3071",
+        linkedin: "https://www.linkedin.com/in/eduardo-oliveira"
     }
 };
 
 export const pages = {
     home: {
-        title: "Andriy Zherukha | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
-        description: "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. View my portfolio of successful projects.",
+        title: "Eduardo Oliveira | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
+        description: "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. View my portfolio of successful projects.",
         keywords: [
             "senior software engineer portfolio",
             "full stack developer",
@@ -47,8 +48,9 @@ export const pages = {
             "web development",
             "node.js developer",
             "python developer",
-            "andriy zherukha",
-            "dublin software engineer"
+            "eduardo oliveira",
+            "brazil software engineer",
+            "suzano software engineer"
         ],
         canonical: "/",
         ogImage: "/images/seo/home-og.png"
@@ -95,9 +97,9 @@ export const structuredData = {
     person: {
         "@context": "https://schema.org",
         "@type": "Person",
-        name: "Andriy Zherukha",
+        name: "Eduardo Oliveira",
         jobTitle: "Senior Software Engineer",
-        description: "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms",
+        description: "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms",
         url: siteConfig.url,
         image: `${siteConfig.url}/images/seo/profile.png`,
         sameAs: [

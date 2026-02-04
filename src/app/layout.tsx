@@ -30,13 +30,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   // Primary Meta Tags
   title: {
-    default: "Andriy Zherukha | Senior Software Engineer - Full Stack Developer",
-    template: "%s | Andriy Zherukha",
+    default: "Eduardo Oliveira | Senior Software Engineer - Full Stack Developer",
+    template: "%s | Eduardo Oliveira",
   },
   description:
-    "Andriy Zherukha is a Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP. Based in Lviv, Ukraine.",
+    "Eduardo Oliveira is an Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP. Based in Suzano, Brazil.",
   keywords: [
-    "Andriy Zherukha",
+    "Eduardo Oliveira",
     "Senior Software Engineer",
     "Full Stack Developer",
     "React Developer",
@@ -49,29 +49,29 @@ export const metadata: Metadata = {
     "NestJS Developer",
     "Mobile Developer",
     "Web Developer",
-    "Lviv Software Engineer",
-    "Ukraine Software Engineer",
+    "Brazil Software Engineer",
+    "Suzano Software Engineer",
     "Cross-Platform Mobile Apps",
   ],
-  authors: [{ name: "Andriy Zherukha", url: "https://hugomarangao.dev" }],
-  creator: "Andriy Zherukha",
-  publisher: "Andriy Zherukha",
+  authors: [{ name: "Eduardo Oliveira", url: "https://hugomarangao.dev" }],
+  creator: "Eduardo Oliveira",
+  publisher: "Eduardo Oliveira",
 
   // Open Graph Meta Tags (for social sharing)
   openGraph: {
     type: "website",
     locale: "en_IE",
     url: "https://hugomarangao.dev",
-    siteName: "Andriy Zherukha Portfolio",
-    title: "Andriy Zherukha | Senior Software Engineer - Full Stack Developer",
+    siteName: "Eduardo Oliveira Portfolio",
+    title: "Eduardo Oliveira | Senior Software Engineer - Full Stack Developer",
   description:
-    "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.",
+    "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Andriy Zherukha - Senior Software Engineer Portfolio",
+        alt: "Eduardo Oliveira - Senior Software Engineer Portfolio",
       },
     ],
   },
@@ -79,11 +79,11 @@ export const metadata: Metadata = {
   // Twitter Card Meta Tags
   twitter: {
     card: "summary_large_image",
-    title: "Andriy Zherukha | Senior Software Engineer",
+    title: "Eduardo Oliveira | Senior Software Engineer",
     description:
       "Senior Software Engineer | React, React Native, Flutter, Node.js, Python Expert",
     images: ["/og-image.png"],
-    creator: "@andriy1004",
+    creator: "@eduardo3071",
   },
 
   // Robots and Crawling
@@ -135,23 +135,19 @@ export const metadata: Metadata = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Andriy Zherukha",
+  name: "Eduardo Oliveira",
   jobTitle: "Senior Software Engineer",
   description:
-    "Senior Software Engineer with over 7 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
+    "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
   url: "https://hugomarangao.dev",
-  email: "freelancer.zherukha@gmail.com",
-  telephone: "+380999081714",
+  email: "eduardooliveiira3077@gmail.com",
+  telephone: "+5511934843013",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Lviv",
-    addressCountry: "Ukraine",
+    addressLocality: "Suzano",
+    addressCountry: "Brazil",
   },
   alumniOf: [
-    {
-      "@type": "CollegeOrUniversity",
-      name: "CCT College Dublin",
-    },
     {
       "@type": "CollegeOrUniversity",
       name: "Grupo Educational UNIS",
@@ -175,39 +171,39 @@ const personSchema = {
     "Web Development",
     "Full Stack Development",
   ],
-  sameAs: ["https://www.linkedin.com/in/hugo-marangao-17ab44219/"],
+  sameAs: ["https://www.linkedin.com/in/eduardo-oliveira"],
   worksFor: {
     "@type": "Organization",
-    name: "AUTOMATION S.R.L.",
+    name: "Grupo Conque",
   },
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Andriy Zherukha Portfolio",
+  name: "Eduardo Oliveira Portfolio",
   url: "https://hugomarangao.dev",
   description:
-    "Portfolio website of Andriy Zherukha, a Senior Software Engineer specializing in full stack web and mobile development.",
+    "Portfolio website of Eduardo Oliveira, a Senior Software Engineer specializing in full stack web and mobile development.",
   author: {
     "@type": "Person",
-    name: "Andriy Zherukha",
+    name: "Eduardo Oliveira",
   },
 };
 
 const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Andriy Zherukha - Software Engineering Services",
+  name: "Eduardo Oliveira - Software Engineering Services",
   description:
     "Professional software engineering services specializing in full stack web and mobile development, scalable applications, and cloud-native solutions.",
   provider: {
     "@type": "Person",
-    name: "Andriy Zherukha",
+    name: "Eduardo Oliveira",
   },
   areaServed: {
     "@type": "Country",
-    name: "Ukraine",
+    name: "Brazil",
   },
   serviceType: [
     "Mobile App Development",

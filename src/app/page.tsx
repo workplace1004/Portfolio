@@ -145,11 +145,13 @@ const SKILLS = {
       { name: "React", level: 95 },
       { name: "React Native", level: 90 },
       { name: "Flutter", level: 90 },
-      { name: "Next.js", level: 90 },
       { name: "Swift", level: 85 },
       { name: "Kotlin", level: 85 },
+      { name: "Next.js", level: 90 },
       { name: "Tailwind CSS", level: 95 },
       { name: "Material UI", level: 90 },
+      { name: "HTML5", level: 95 },
+      { name: "CSS3", level: 95 },
     ]
   },
   backend: {
@@ -162,9 +164,13 @@ const SKILLS = {
       { name: "NestJS", level: 90 },
       { name: "Python (FastAPI, Flask)", level: 90 },
       { name: "Django", level: 85 },
+      { name: "REST APIs", level: 95 },
+      { name: "GraphQL", level: 85 },
       { name: "PostgreSQL", level: 90 },
       { name: "MongoDB", level: 90 },
-      { name: "GraphQL", level: 85 },
+      { name: "MySQL", level: 85 },
+      { name: "Redis", level: 85 },
+      { name: "JWT Authentication", level: 95 },
     ]
   },
   devops: {
@@ -172,13 +178,15 @@ const SKILLS = {
     icon: Terminal,
     color: "cosmic-orange",
     items: [
-      { name: "AWS (Lambda, ECS, S3, RDS)", level: 90 },
+      { name: "AWS", level: 90 },
       { name: "Azure", level: 85 },
       { name: "Docker", level: 90 },
       { name: "GitHub Actions", level: 90 },
       { name: "GitLab CI/CD", level: 85 },
       { name: "Jenkins", level: 80 },
       { name: "Nginx", level: 85 },
+      { name: "Vercel", level: 90 },
+      { name: "Cloudflare", level: 85 },
     ]
   },
   other: {
@@ -191,65 +199,47 @@ const SKILLS = {
       { name: "Stripe", level: 90 },
       { name: "PayPal", level: 85 },
       { name: "Firebase", level: 90 },
-      { name: "Redis", level: 85 },
-      { name: "JWT Authentication", level: 95 },
     ]
   }
 };
 
 const EXPERIENCES = [
   {
-    role: "Senior Software Engineer",
-    company: "LLC LUN Ukraina",
+    role: "Software Engineer",
+    company: "Grupo Conque",
     location: "Remote",
     period: "04/2023 – 12/2025",
     duration: "2+ years",
     type: "Full-time",
     isCurrent: true,
-    description: "Spearheading the development of Ukraine's leading real estate platform, improving operational efficiency and enhancing user experience across web and mobile platforms.",
-    achievements: [
-      "Spearheaded the implementation of modern technology solutions for LUN real estate platform, improving operational efficiency by 30% and enhancing overall user experience across web and mobile platforms",
-      "Cooperated directly with clients to translate business objectives into application features, increasing customer satisfaction scores by 25% and reducing revision cycles",
-      "Designed and executed privacy and consent workflows with role-based admin modules, ensuring regulatory compliance and reducing manual approval effort by 40%"
-    ],
-    technologies: ["React", "React Native", "Node.js", "Express.js", "PostgreSQL", "AWS"]
-  },
-  {
-    role: "Software Engineer",
-    company: "Modern Urology Center LLC",
-    location: "Remote",
-    period: "04/2023 – 11/2025",
-    duration: "2+ years",
-    type: "Full-time",
-    isCurrent: false,
-    description: "Created and launched healthcare management solutions for Health24, working with clients to translate business goals into tailored application features.",
+    description: "Created and launched innovative software solutions, working with clients to translate business goals into tailored application features.",
     achievements: [
       "Created and launched a hospital management portal used by 500+ healthcare staff and patients, reducing administrative processing time by 35% and streamlining appointment scheduling workflows",
       "Worked with clients to translate business goals into tailored application features, increasing customer satisfaction by 25% and shortening delivery cycles",
       "Implemented performance-focused technology upgrades that improved system speed by 40%, reduced operational costs, and drove higher user engagement"
     ],
-    technologies: ["React", "Node.js", "PostgreSQL", "MongoDB", "Express.js"]
+    technologies: ["React", "React Native", "Node.js", "Express.js", "PostgreSQL", "MongoDB"]
   },
   {
     role: "Mobile Developer",
-    company: "Shafa",
+    company: "ViaShopModa",
     location: "Remote",
-    period: "05/2019 – 03/2023",
-    duration: "4 years",
+    period: "05/2021 – 03/2023",
+    duration: "2 years",
     type: "Full-time",
     isCurrent: false,
-    description: "Developed mobile applications for Shafa.ua marketplace, enhancing user engagement and accessibility while enforcing industry best practices.",
+    description: "Developed and delivered mobile applications for virtual stores, improving user engagement, accessibility, and overall customer experience.",
     achievements: [
-      "Developed mobile applications for 60 virtual stores, enhancing user engagement and accessibility",
-      "Partnered with clients to translate business requirements into tailored application features, increasing customer satisfaction scores by 20 percent and reducing rework cycles",
-      "Enforced industry best practices in mobile development, with a focus on security and optimization for mobile devices"
+      "Developed and delivered mobile applications for 60 virtual stores, improving user engagement, accessibility, and overall customer experience",
+      "Collaborated with clients to translate business requirements into customized application features, increasing customer satisfaction by 20% and reducing rework cycles",
+      "Executed industry best practices in mobile development, focusing on performance optimization, responsive design, and robust security to protect user and transaction data"
     ],
     technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Firebase"]
   }
 ];
 
 const STATS = [
-  { label: "Years Experience", value: "7+", icon: Clock },
+  { label: "Years Experience", value: "5+", icon: Clock },
   { label: "Projects Delivered", value: "60+", icon: Rocket },
   { label: "Happy Clients", value: "50+", icon: Users },
   { label: "Healthcare Users", value: "500+", icon: Download },
@@ -324,7 +314,7 @@ export default function Home() {
             {/* Name */}
             <AnimatedText animation="scale-in-glow" delay={0.2}>
               <h1 className="font-display mb-2 text-6xl font-black tracking-tighter text-white md:text-8xl lg:text-9xl name-glow">
-                ANDRIY ZHERUKHA
+                EDUARDO OLIVEIRA
               </h1>
             </AnimatedText>
 
@@ -341,7 +331,7 @@ export default function Home() {
             {/* Summary - Clean & Focused */}
             <AnimatedText animation="blur-in" delay={0.4}>
               <p className="mx-auto mb-12 max-w-2xl text-lg text-secondary/80 leading-relaxed font-light">
-                Senior Software Engineer with over 7 years of expertise delivering scalable <span className="text-white font-medium">web and mobile solutions</span> across fintech, edtech, SaaS, and <span className="text-white font-medium">AI-driven platforms</span>. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.
+                Experienced Software Engineer with over 5 years of expertise delivering scalable <span className="text-white font-medium">web and mobile solutions</span> across fintech, edtech, SaaS, and <span className="text-white font-medium">AI-driven platforms</span>. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.
               </p>
             </AnimatedText>
 
@@ -366,8 +356,8 @@ export default function Home() {
             {/* Meta Info Bar */}
             <AnimatedText animation="fade-in-up" delay={0.6} className="mt-16">
               <div className="flex items-center justify-center gap-8 text-[10px] text-muted font-bold tracking-[0.2em] uppercase opacity-60">
-                <span className="flex items-center gap-2"><MapPin className="h-3 w-3" /> Lviv, Ukraine</span>
-                <span className="flex items-center gap-2"><Briefcase className="h-3 w-3" /> 7+ Years Experience</span>
+                <span className="flex items-center gap-2"><MapPin className="h-3 w-3" /> Suzano, Brazil</span>
+                <span className="flex items-center gap-2"><Briefcase className="h-3 w-3" /> 5+ Years Experience</span>
               </div>
             </AnimatedText>
           </div>
@@ -530,7 +520,7 @@ export default function Home() {
             {/* View More */}
             <AnimatedText animation="fade-in-up" delay={0.5} className="mt-10 text-center">
               <a
-                href="https://github.com/andriy1004"
+                href="https://github.com/eduardo3071"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cosmic-blue hover:text-cosmic-cyan transition-colors"
@@ -748,11 +738,11 @@ export default function Home() {
                     <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-6">
                       <GraduationCap className="h-6 w-6 text-cosmic-purple mb-3" />
                       <h3 className="text-lg font-semibold text-primary mb-1">Bachelor's degree, Computer Science</h3>
-                      <p className="text-cosmic-cyan mb-1">Ivan Franko National University of Lviv</p>
-                      <p className="text-secondary mb-2">Lviv, Ukraine</p>
+                      <p className="text-cosmic-cyan mb-1">Grupo Educational UNIS</p>
+                      <p className="text-secondary mb-2">Brazil</p>
                       <p className="text-sm text-muted flex items-center gap-2">
                         <Clock className="h-4 w-4" />
-                        2018 – 2021
+                        2020 – 2023
                       </p>
                     </div>
                   </div>
@@ -767,7 +757,8 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5">
                       {[
-                        { lang: "Ukrainian", level: "Native", proficiency: 100 },
+                        { lang: "Italian", level: "Native", proficiency: 100 },
+                        { lang: "Portuguese", level: "Native", proficiency: 100 },
                         { lang: "English", level: "Fluent", proficiency: 95 }
                       ].map((l) => (
                         <div key={l.lang} className="flex justify-between items-center text-sm py-2 border-b border-white/5 last:border-0">
@@ -920,16 +911,16 @@ export default function Home() {
             <AnimatedText animation="fade-in-up" delay={0.2}>
               <div className="grid gap-4 sm:grid-cols-3 mb-10">
                 <a
-                  href="mailto:freelancer.zherukha@gmail.com"
+                  href="mailto:eduardooliveiira3077@gmail.com"
                   className="group rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5 hover:border-cosmic-blue/30 transition-all card-hover"
-                  aria-label="Send email to Andriy"
+                  aria-label="Send email to Eduardo"
                 >
                   <Mail className="h-6 w-6 text-cosmic-blue mx-auto mb-3" />
                   <p className="text-xs text-muted mb-1">Email</p>
-                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">freelancer.zherukha@gmail.com</p>
+                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">eduardooliveiira3077@gmail.com</p>
                 </a>
                 <a
-                  href="https://wa.me/380999081714"
+                  href="https://wa.me/5511934843013"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5 hover:border-cosmic-purple/30 transition-all card-hover"
@@ -937,18 +928,18 @@ export default function Home() {
                 >
                   <Phone className="h-6 w-6 text-cosmic-purple mx-auto mb-3" />
                   <p className="text-xs text-muted mb-1">Phone</p>
-                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">+380 99 908 1714</p>
+                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">+55 11 93484 3013</p>
                 </a>
                 <a
-                  href="https://t.me/andriy1089"
+                  href="https://www.linkedin.com/in/eduardo-oliveira"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5 hover:border-cosmic-pink/30 transition-all card-glow"
-                  aria-label="Contact on Telegram"
+                  aria-label="Contact on LinkedIn"
                 >
                   <Send className="h-6 w-6 text-cosmic-pink mx-auto mb-3" />
-                  <p className="text-xs text-muted mb-1">Telegram</p>
-                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">https://t.me/andriy1089</p>
+                  <p className="text-xs text-muted mb-1">LinkedIn</p>
+                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">in/eduardo-oliveira</p>
                 </a>
               </div>
             </AnimatedText>
@@ -957,7 +948,7 @@ export default function Home() {
             <AnimatedText animation="scale-in-glow" delay={0.3}>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center mb-12">
                 <a
-                  href="mailto:freelancer.zherukha@gmail.com?subject=Project%20Inquiry&body=Hi%20Andriy%2C%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.%0A%0AProject%20Type%3A%20%0ABudget%3A%20%0ATimeline%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
+                  href="mailto:eduardooliveiira3077@gmail.com?subject=Project%20Inquiry&body=Hi%20Eduardo%2C%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.%0A%0AProject%20Type%3A%20%0ABudget%3A%20%0ATimeline%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
                   className="group rounded-full bg-gradient-to-r from-cosmic-blue to-cosmic-purple px-8 py-4 text-base font-semibold text-white hover:shadow-xl hover:shadow-cosmic-purple/30 transition-all hover:scale-105"
                 >
                   <span className="flex items-center justify-center gap-2">
@@ -967,13 +958,13 @@ export default function Home() {
                   </span>
                 </a>
                 <a
-                  href="https://t.me/andriy1089"
+                  href="https://www.linkedin.com/in/eduardo-oliveira"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-white/15 px-8 py-4 text-base font-medium text-secondary hover:border-white/30 hover:text-primary transition-all flex items-center justify-center gap-2"
                 >
                   <Send className="h-5 w-5" />
-                  Connect on Telegram
+                  Connect on LinkedIn
                 </a>
               </div>
             </AnimatedText>
@@ -994,10 +985,10 @@ export default function Home() {
             {/* Footer */}
             <footer className="text-center">
               <p className="text-sm text-muted mb-2">
-                © {new Date().getFullYear()} Andriy Zherukha. Built with Next.js, Three.js & ❤️
+                © {new Date().getFullYear()} Eduardo Oliveira. Built with Next.js, Three.js & ❤️
               </p>
               <p className="text-xs text-muted">
-                Lviv, Ukraine • Open to remote opportunities worldwide
+                Suzano, Brazil • Open to remote opportunities worldwide
               </p>
             </footer>
           </div>
