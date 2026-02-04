@@ -27,11 +27,11 @@ const PROJECTS = [
     title: "Healthcare Management Platform",
     description: "Healthcare website for the Center of Modern Urology in Kyiv, providing information about doctors, diagnostics, treatments, and clinic locations for patients.",
     image: "/images/project/healthcare.png",
-    technologies: ["Healthcare", "React", "Next.js", "SEO", "Responsive UI"],
+    technologies: ["Healthcare", "React", "Next.js", "SEO", "Responsive UI", "TypeScript", ".NET", "Tailwind CSS", "Python", "PostgreSQL", "Docker", "CI/CD"],
     category: "Web / Healthcare",
     highlights: ["Doctors directory", "Diagnostics & treatments", "Multilingual content", "Clinic locations & contacts"],
     color: "cosmic-blue",
-    metrics: { city: "Kyiv", clinics: "2", phone: "+38 099 412 55 95" },
+    metrics: { city: "Kyiv", clinics: "2" },
     liveUrl: "https://urology.net.ua/"
   },
   {
@@ -49,7 +49,7 @@ const PROJECTS = [
     title: "Ecommerce / Marketplace",
     description: "Online marketplace focused on fashion and lifestyle: browsing categories, discounts, new arrivals, brand discovery, and a feed-style shopping experience.",
     image: "/images/project/ecommerce.png",
-    technologies: ["E-commerce","React", "Marketplace", "Catalog", "Emotion","Cloudflare"],
+    technologies: ["E-commerce", "React", "Marketplace", "Catalog", "Emotion", "Cloudflare", "TypeScript", ".NET", "Tailwind CSS", "Python", "CI/CD"],
     liveUrl: "https://shafa.ua/",
     category: "Marketplace / E-commerce",
     highlights: ["Catalog & categories", "Discounts", "New arrivals", "Brand pages", "User listings"],
@@ -71,7 +71,7 @@ const PROJECTS = [
     title: "LUN Real Estate Platform",
     description: "Ukrainian real estate platform for finding new builds, apartments, houses, and commercial properties for sale or rent across major cities. Provides detailed project info, developer profiles, and market statistics to help users make informed decisions.",
     image: "/images/project/realestate.png",
-    technologies: ["React", "Next.js", "Maps", "Analytics", "Search"],
+    technologies: ["React", "Next.js", "Maps", "Analytics", "Search", "TypeScript", ".NET", "Tailwind CSS", "Python", "PostgreSQL", "Docker", "CI/CD", "FastAPI"],
     liveUrl: "https://lun.ua/",
     category: "Web / Real Estate",
     highlights: ["New builds & resale", "Rent & sale", "Developer catalog", "Market analytics"],
@@ -82,7 +82,7 @@ const PROJECTS = [
     title: "LUN: Sale and Rent Apartments",
     description: "Mobile app for finding apartments, houses, and all residential real estate in Ukraine. View new builds, secondary market, and rentals in one place. Features 3D models of residential complexes, video room tours, AI-powered search algorithms, and the ability to create and manage your own listings.",
     image: "/images/project/realestate-mobile.png",
-    technologies: ["React Native", "iOS", "Real Estate", "Maps", "AI Search"],
+    technologies: ["React Native", "iOS", "Real Estate", "Maps", "AI Search", "Firebase"],
     liveUrl: "https://apps.apple.com/us/app/lun-sale-and-rent-apartments/id1508320534",
     category: "Mobile / Real Estate",
     highlights: ["3D models & video tours", "AI-powered search", "Map with metro schematics", "Create listings"],
@@ -143,13 +143,16 @@ const SKILLS = {
     color: "cosmic-blue",
     items: [
       { name: "React", level: 95 },
-      { name: "React Native", level: 90 },
-      { name: "Flutter", level: 90 },
-      { name: "Swift", level: 85 },
-      { name: "Kotlin", level: 85 },
-      { name: "Next.js", level: 90 },
+      { name: "Next.js", level: 95 },
+      { name: "Angular", level: 85 },
+      { name: "Vue.js", level: 85 },
+      { name: "TypeScript", level: 95 },
+      { name: "JavaScript", level: 95 },
       { name: "Tailwind CSS", level: 95 },
-      { name: "Material UI", level: 90 },
+      { name: "Bootstrap", level: 90 },
+      { name: "D3.js", level: 85 },
+      { name: "GraphQL", level: 85 },
+      { name: "Apollo", level: 85 },
       { name: "HTML5", level: 95 },
       { name: "CSS3", level: 95 },
     ]
@@ -162,15 +165,55 @@ const SKILLS = {
       { name: "Node.js", level: 95 },
       { name: "Express.js", level: 95 },
       { name: "NestJS", level: 90 },
-      { name: "Python (FastAPI, Flask)", level: 90 },
+      { name: "Python", level: 90 },
+      { name: "FastAPI", level: 90 },
       { name: "Django", level: 85 },
+      { name: "PHP", level: 85 },
+      { name: "Laravel", level: 85 },
+      { name: ".NET", level: 90 },
+      { name: "ASP.NET Core", level: 90 },
+      { name: "C#", level: 90 },
       { name: "REST APIs", level: 95 },
-      { name: "GraphQL", level: 85 },
-      { name: "PostgreSQL", level: 90 },
-      { name: "MongoDB", level: 90 },
-      { name: "MySQL", level: 85 },
-      { name: "Redis", level: 85 },
+      { name: "GraphQL APIs", level: 85 },
       { name: "JWT Authentication", level: 95 },
+    ]
+  },
+  mobile: {
+    title: "Mobile",
+    icon: Smartphone,
+    color: "cosmic-teal",
+    items: [
+      { name: "React Native", level: 95 },
+      { name: "Flutter", level: 90 },
+      { name: "Swift", level: 85 },
+      { name: "Kotlin", level: 85 },
+      { name: "Java", level: 85 },
+    ]
+  },
+  ai: {
+    title: "AI & Automation",
+    icon: Brain,
+    color: "cosmic-pink",
+    items: [
+      { name: "OpenAI", level: 90 },
+      { name: "LLM Integration", level: 90 },
+      { name: "AI Chat Systems", level: 85 },
+      { name: "Workflow Automation", level: 85 },
+      { name: "LangChain", level: 85 },
+    ]
+  },
+  databases: {
+    title: "Databases",
+    icon: Database,
+    color: "cosmic-yellow",
+    items: [
+      { name: "PostgreSQL", level: 95 },
+      { name: "MySQL", level: 90 },
+      { name: "MongoDB", level: 95 },
+      { name: "SQL Server", level: 90 },
+      { name: "Firebase", level: 90 },
+      { name: "Supabase", level: 85 },
+      { name: "Redis", level: 85 },
     ]
   },
   devops: {
@@ -179,67 +222,90 @@ const SKILLS = {
     color: "cosmic-orange",
     items: [
       { name: "AWS", level: 90 },
-      { name: "Azure", level: 85 },
+      { name: "CI/CD Pipelines", level: 90 },
       { name: "Docker", level: 90 },
       { name: "GitHub Actions", level: 90 },
       { name: "GitLab CI/CD", level: 85 },
-      { name: "Jenkins", level: 80 },
       { name: "Nginx", level: 85 },
       { name: "Vercel", level: 90 },
       { name: "Cloudflare", level: 85 },
-    ]
-  },
-  other: {
-    title: "Other",
-    icon: Brain,
-    color: "cosmic-teal",
-    items: [
-      { name: "OpenAI", level: 90 },
-      { name: "LangChain", level: 85 },
-      { name: "Stripe", level: 90 },
-      { name: "PayPal", level: 85 },
-      { name: "Firebase", level: 90 },
     ]
   }
 };
 
 const EXPERIENCES = [
   {
-    role: "Software Engineer",
-    company: "Grupo Conque",
-    location: "Remote",
-    period: "04/2023 – 12/2025",
-    duration: "2+ years",
+    role: "Full Stack Engineer",
+    company: "NovaTech Solutions",
+    location: "Lviv, Ukraine | Remote",
+    period: "01/2021 – 01/2024",
+    duration: "4+ years",
     type: "Full-time",
     isCurrent: true,
-    description: "Created and launched innovative software solutions, working with clients to translate business goals into tailored application features.",
+    description: "Delivered scalable web applications and end to end product features, collaborating with cross functional teams to turn business needs into reliable software.",
     achievements: [
-      "Created and launched a hospital management portal used by 500+ healthcare staff and patients, reducing administrative processing time by 35% and streamlining appointment scheduling workflows",
-      "Worked with clients to translate business goals into tailored application features, increasing customer satisfaction by 25% and shortening delivery cycles",
-      "Implemented performance-focused technology upgrades that improved system speed by 40%, reduced operational costs, and drove higher user engagement"
+      "Built full stack platforms using modern frontend frameworks and backend services",
+      "Designed REST APIs and optimized database performance for high traffic systems",
+      "Improved application performance and maintainability through clean architecture practices",
+      "Contributed to product planning, technical decisions, and mentoring developers"
     ],
-    technologies: ["React", "React Native", "Node.js", "Express.js", "PostgreSQL", "MongoDB"]
+    technologies: ["React", "Next.js", "Vue.js", "Angular", "Tailwind CSS", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB"]
   },
   {
-    role: "Mobile Developer",
-    company: "ViaShopModa",
-    location: "Remote",
-    period: "05/2021 – 03/2023",
+    role: "Mobile | Backend Developer",
+    company: "DigitalCore Systems",
+    location: "Lviv, Ukraine",
+    period: "03/2018 – 12/2020",
+    duration: "2+ years",
+    type: "Full-time",
+    isCurrent: false,
+    description: "Focused on mobile integrations and backend services development using Microsoft technologies.",
+    achievements: [
+      "Developed secure backend APIs in .NET supporting mobile applications",
+      "Implemented authentication, data synchronization, and scalable cloud services",
+      "Collaborated with mobile teams to deliver stable and performant app features",
+      "Optimized backend logic improving response time and reliability"
+    ],
+    technologies: [".NET", "ASP.NET Core", "C#", "REST APIs", "SQL Server", "Mobile Integrations"]
+  },
+  {
+    role: "Mobile | Frontend Developer",
+    company: "ByteWave Studio",
+    location: "Lviv, Ukraine",
+    period: "06/2015 – 02/2018",
+    duration: "2+ years",
+    type: "Full-time",
+    isCurrent: false,
+    description: "Worked on mobile focused UI development and responsive frontend applications.",
+    achievements: [
+      "Built mobile friendly interfaces and reusable UI components",
+      "Improved user experience through performance optimization and modern design practices",
+      "Integrated frontend apps with backend APIs and third party services",
+      "Collaborated closely with designers to ensure consistent UX across devices"
+    ],
+    technologies: ["React Native", 'Flutter', 'Kotlin', "JavaScript", "TypeScript", "HTML", "CSS", 'Firebase']
+  },
+  {
+    role: "Backend Developer",
+    company: "CodeBridge Technologies",
+    location: "Lviv, Ukraine",
+    period: "04/2013 – 05/2015",
     duration: "2 years",
     type: "Full-time",
     isCurrent: false,
-    description: "Developed and delivered mobile applications for virtual stores, improving user engagement, accessibility, and overall customer experience.",
+    description: "Developed enterprise level backend systems using Microsoft .NET technologies.",
     achievements: [
-      "Developed and delivered mobile applications for 60 virtual stores, improving user engagement, accessibility, and overall customer experience",
-      "Collaborated with clients to translate business requirements into customized application features, increasing customer satisfaction by 20% and reducing rework cycles",
-      "Executed industry best practices in mobile development, focusing on performance optimization, responsive design, and robust security to protect user and transaction data"
+      "Designed and maintained backend services using .NET and C#",
+      "Built scalable APIs and business logic for internal platforms",
+      "Improved system stability through refactoring and performance tuning",
+      "Participated in architecture discussions and code quality initiatives"
     ],
-    technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Firebase"]
+    technologies: [".NET", "ASP.NET MVC", "C#", "SQL Server", "REST APIs", 'Node.js', 'Express.js', 'MongoDB', 'PostgreSQL']
   }
 ];
 
 const STATS = [
-  { label: "Years Experience", value: "5+", icon: Clock },
+  { label: "Years Experience", value: "10+", icon: Clock },
   { label: "Projects Delivered", value: "60+", icon: Rocket },
   { label: "Happy Clients", value: "50+", icon: Users },
   { label: "Healthcare Users", value: "500+", icon: Download },
@@ -314,7 +380,7 @@ export default function Home() {
             {/* Name */}
             <AnimatedText animation="scale-in-glow" delay={0.2}>
               <h1 className="font-display mb-2 text-6xl font-black tracking-tighter text-white md:text-8xl lg:text-9xl name-glow">
-                EDUARDO OLIVEIRA
+                YURII KRAVCHUK
               </h1>
             </AnimatedText>
 
@@ -322,7 +388,7 @@ export default function Home() {
             <AnimatedText animation="fade-in-up" delay={0.3}>
               <div className="mb-8 flex flex-col items-center gap-2">
                 <p className="text-xl text-cosmic-cyan md:text-2xl font-medium tracking-tight">
-                  Senior Software Engineer
+                  Senior Full-Stack Developer
                 </p>
                 <div className="h-px w-24 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
               </div>
@@ -331,7 +397,7 @@ export default function Home() {
             {/* Summary - Clean & Focused */}
             <AnimatedText animation="blur-in" delay={0.4}>
               <p className="mx-auto mb-12 max-w-2xl text-lg text-secondary/80 leading-relaxed font-light">
-                Experienced Software Engineer with over 5 years of expertise delivering scalable <span className="text-white font-medium">web and mobile solutions</span> across fintech, edtech, SaaS, and <span className="text-white font-medium">AI-driven platforms</span>. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.
+                I am a Senior Full-Stack Developer with 10+ years of experience building <span className="text-white font-medium">web, mobile, and cloud applications</span>. I also work with <span className="text-white font-medium">AI systems, LLM integrations, and automation tools</span> to help businesses work faster and smarter. I help startups and companies turn ideas into real products, building complete systems — frontend, backend, databases, cloud infrastructure, and AI-powered features.
               </p>
             </AnimatedText>
 
@@ -356,8 +422,8 @@ export default function Home() {
             {/* Meta Info Bar */}
             <AnimatedText animation="fade-in-up" delay={0.6} className="mt-16">
               <div className="flex items-center justify-center gap-8 text-[10px] text-muted font-bold tracking-[0.2em] uppercase opacity-60">
-                <span className="flex items-center gap-2"><MapPin className="h-3 w-3" /> Suzano, Brazil</span>
-                <span className="flex items-center gap-2"><Briefcase className="h-3 w-3" /> 5+ Years Experience</span>
+                <span className="flex items-center gap-2"><MapPin className="h-3 w-3" /> Lviv, Ukraine</span>
+                <span className="flex items-center gap-2"><Briefcase className="h-3 w-3" /> 10+ Years Experience</span>
               </div>
             </AnimatedText>
           </div>
@@ -425,6 +491,60 @@ export default function Home() {
         <div className="section-divider" />
 
         {/* ============================================
+            ABOUT ME
+        ============================================ */}
+        <section
+          id="about"
+          className="relative px-6 py-20"
+          aria-labelledby="about-heading"
+        >
+          <div className="mx-auto max-w-4xl">
+            <AnimatedText animation="fade-in-up" className="mb-12 text-center">
+              <p className="mb-2 text-xs uppercase tracking-widest text-cosmic-cyan">About Me</p>
+              <h2 id="about-heading" className="text-2xl font-semibold text-primary md:text-4xl mb-4 title-glow">
+                Who I Am
+              </h2>
+            </AnimatedText>
+
+            <AnimatedText animation="blur-in" delay={0.2}>
+              <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-8 card-glow">
+                <div className="prose prose-invert max-w-none text-secondary space-y-4">
+                  <p className="text-base leading-relaxed">
+                    I am a Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. I also work with AI systems, LLM integrations, and automation tools to help businesses work faster and smarter.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    I help startups and companies turn ideas into real products. I build complete systems — frontend, backend, databases, cloud infrastructure, and AI-powered features.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    I work with modern frontend technologies including React.js, Next.js, Angular, Vue.js, Tailwind CSS, and Bootstrap, and I build responsive, high-performance user interfaces. I also create data visualization features using D3.js and develop applications that use GraphQL and Apollo.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    For mobile development, I build cross-platform and native apps using React Native, Flutter, Swift for iOS, and Java or Kotlin for Android.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    On the backend, I develop scalable systems using Node.js with Express and Nest.js, Python with FastAPI, and PHP with Laravel. I design REST APIs and GraphQL APIs, and I implement authentication systems and application security.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    I also have strong experience with AI, LLM, and automation. I integrate OpenAI and other LLM APIs, build AI chat features, create AI content generation systems, develop workflow automation, and add AI-powered features into SaaS products. I work with data processing pipelines, bots, and task automation systems.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    For databases, I use PostgreSQL, MySQL, MongoDB, Firebase, and Supabase, depending on project needs.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    In cloud and DevOps, I work with AWS, CI/CD pipelines, deployment processes, server setup, and performance optimization.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    I also write tests using Jest and Cypress, design system architecture, and build real-time features. I have additional experience with Unity for interactive and 3D applications.
+                  </p>
+                </div>
+              </div>
+            </AnimatedText>
+          </div>
+        </section>
+
+        <div className="section-divider" />
+
+        {/* ============================================
             PROJECTS / PORTFOLIO
         ============================================ */}
         <section
@@ -432,7 +552,7 @@ export default function Home() {
           className="relative px-6 py-20"
           aria-labelledby="projects-heading"
         >
-          <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-7xl">
 
             <AnimatedText animation="fade-in-up" className="mb-12 text-center">
               <p className="mb-2 text-xs uppercase tracking-widest text-cosmic-purple">Portfolio</p>
@@ -445,82 +565,120 @@ export default function Home() {
               </p>
             </AnimatedText>
 
-            <div className="grid gap-6 md:grid-cols-2">
-              {PROJECTS.map((project, i) => (
-                <AnimatedText key={project.title} animation="fade-in-up" delay={0.1 * i}>
-                  <article className="group relative overflow-hidden rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-6 transition-all hover:border-cosmic-purple/30 card-glow h-full">
-                    {/* Image background (optional) */}
-                    {project.image && (
-                      <div className="absolute inset-0 -z-10">
-                        <Image
-                          src={project.image}
-                          alt={`${project.title} preview`}
-                          width={1200}
-                          height={675}
-                          className="w-full h-full object-cover"
-                          priority={false}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
-                      </div>
-                    )}
+            <div className="space-y-16 md:space-y-24">
+              {PROJECTS.map((project, i) => {
+                const isEven = i % 2 === 0;
+                // Color mapping for dynamic classes
+                const colorClasses: Record<string, { bg: string; text: string }> = {
+                  "cosmic-blue": { bg: "bg-cosmic-blue/20", text: "text-cosmic-blue" },
+                  "cosmic-teal": { bg: "bg-cosmic-teal/20", text: "text-cosmic-teal" },
+                  "cosmic-purple": { bg: "bg-cosmic-purple/20", text: "text-cosmic-purple" },
+                  "cosmic-orange": { bg: "bg-cosmic-orange/20", text: "text-cosmic-orange" },
+                  "cosmic-pink": { bg: "bg-cosmic-pink/20", text: "text-cosmic-pink" },
+                  "cosmic-cyan": { bg: "bg-cosmic-cyan/20", text: "text-cosmic-cyan" },
+                };
+                const colorClass = colorClasses[project.color] || colorClasses["cosmic-blue"];
 
-                    <div className="relative z-10">
-                      {/* Project Header */}
-                      <div className="flex items-start justify-between mb-4">
-                        <div>
-                          <span className={`inline-block rounded-full bg-${project.color}/20 px-2.5 py-0.5 text-xs text-${project.color} font-medium mb-2`}>
-                            {project.category}
-                          </span>
-                          <h3 className="text-lg font-semibold text-primary">
-                            {project.title}
-                          </h3>
-                        </div>
-                        {project.liveUrl && (
-                          <a
-                            href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-2 rounded-lg border border-white/10 hover:border-white/20 transition-colors"
-                            aria-label={`Open ${project.title} website`}
-                          >
-                            <ExternalLink className="h-4 w-4 text-muted" />
-                          </a>
+                return (
+                  <AnimatedText key={project.title} animation="fade-in-up" delay={0.1 * i}>
+                    <article className="group relative overflow-hidden rounded-2xl border border-white/12 bg-black/40 backdrop-blur-2xl transition-all hover:border-cosmic-purple/30 hover:shadow-2xl hover:shadow-cosmic-purple/10 card-glow">
+                      <div className={`grid gap-0 items-stretch ${isEven ? 'md:grid-cols-[55%_45%]' : 'md:grid-cols-[45%_55%]'}`}>
+                        {/* Image Section */}
+                        {project.image && (
+                          <div className={`relative h-72 md:h-full overflow-hidden ${isEven ? 'md:order-1' : 'md:order-2'}`}>
+                            {/* Gradient overlay on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-cosmic-purple/20 via-transparent to-cosmic-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+
+                            {/* Image */}
+                            <Image
+                              src={project.image}
+                              alt={`${project.title} preview`}
+                              width={1200}
+                              height={675}
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                              priority={i < 2}
+                            />
+
+                            {/* Gradient overlay for mobile readability */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent md:opacity-0 transition-opacity" />
+
+                            {/* Live URL Badge on Image */}
+                            {project.liveUrl && (
+                              <a
+                                href={project.liveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="absolute top-4 right-4 z-20 p-3 rounded-xl bg-black/70 backdrop-blur-md border border-white/20 hover:border-cosmic-cyan/50 hover:bg-black/90 transition-all group/link shadow-lg"
+                                aria-label={`Open ${project.title} website`}
+                              >
+                                <ExternalLink className="h-4 w-4 text-white group-hover/link:text-cosmic-cyan transition-colors" />
+                              </a>
+                            )}
+
+                            {/* Decorative corner accent */}
+                            <div className={`absolute bottom-0 left-0 w-32 h-32 ${colorClass.bg} opacity-20 blur-3xl`} />
+                          </div>
                         )}
-                      </div>
 
-                      {/* Description */}
-                      <p className="text-sm text-secondary leading-relaxed mb-4">
-                        {project.description}
-                      </p>
+                        {/* Content Section */}
+                        <div className={`p-3 md:p-10 lg:p-6 flex flex-col justify-center h-full ${isEven ? 'md:order-2' : 'md:order-1'}`}>
+                          {/* Project Header */}
+                          <div className="mb-4">
+                            <span className={`inline-block rounded-full ${colorClass.bg} ${colorClass.text} px-3 py-1.5 text-xs font-semibold mb-4 tracking-wide`}>
+                              {project.category}
+                            </span>
+                            <h3 className="text-2xl md:text-3xl font-bold text-primary group-hover:text-cosmic-cyan transition-colors leading-tight">
+                              {project.title}
+                            </h3>
+                          </div>
 
-                      {/* Highlights */}
-                      <div className="flex flex-wrap gap-2 mb-4 mt-2">
-                        {project.highlights.map((highlight) => (
-                          <span key={highlight} className="flex items-center gap-1 text-xs text-cosmic-teal">
-                            <CheckCircle2 className="h-3 w-3" />
-                            {highlight}
-                          </span>
-                        ))}
-                      </div>
+                          {/* Description */}
+                          <p className="text-base md:text-lg text-secondary leading-relaxed mb-4">
+                            {project.description}
+                          </p>
 
-                      {/* Tech Stack */}
-                      <div className="flex flex-wrap gap-2 pt-4 border-t border-white/8">
-                        {project.technologies.map((tech) => (
-                          <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5 text-xs text-secondary">
-                            {tech}
-                          </span>
-                        ))}
+                          {/* Highlights */}
+                          <div className="space-y-3 mb-4 grid grid-cols-2 gap-2">
+                            {project.highlights.map((highlight) => (
+                              <div key={highlight} className="flex items-start gap-3 text-sm md:text-base text-secondary">
+                                <CheckCircle2 className="h-5 w-5 text-cosmic-teal mt-0.5 flex-shrink-0" />
+                                <span className="leading-relaxed">{highlight}</span>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* Tech Stack */}
+                          <div className="flex flex-wrap gap-2 border-t border-white/8">
+                            {project.technologies.map((tech) => (
+                              <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-secondary hover:border-cosmic-blue/40 hover:text-cosmic-blue hover:bg-cosmic-blue/10 transition-all cursor-default">
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+
+                          {/* Metrics (if available) */}
+                          {project.metrics && (
+                            <div className="mt-6 border-t border-white/8 flex flex-wrap gap-6 text-sm">
+                              {Object.entries(project.metrics).map(([key, value]) => (
+                                <div key={key} className="flex items-center gap-2">
+                                  <span className="text-cosmic-cyan font-semibold text-base">{value}</span>
+                                  <span className="text-muted capitalize">{key}</span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                </AnimatedText>
-              ))}
+                    </article>
+                  </AnimatedText>
+                );
+              })}
             </div>
 
             {/* View More */}
             <AnimatedText animation="fade-in-up" delay={0.5} className="mt-10 text-center">
               <a
-                href="https://github.com/eduardo3071"
+                href="https://github.com/yuriikravchuk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-cosmic-blue hover:text-cosmic-cyan transition-colors"
@@ -567,13 +725,16 @@ export default function Home() {
                       {category.items.map((skill) => {
                         // Color mapping for progress bars
                         const colorMap: Record<string, { from: string; to: string }> = {
-                          "cosmic-blue": { from: "#60a5fa", to: "rgba(96, 165, 250, 0.6)" },
-                          "cosmic-purple": { from: "#a78bfa", to: "rgba(167, 139, 250, 0.6)" },
-                          "cosmic-orange": { from: "#fb923c", to: "rgba(251, 146, 60, 0.6)" },
-                          "cosmic-teal": { from: "#2dd4bf", to: "rgba(45, 212, 191, 0.6)" },
+                          "cosmic-blue": { from: "#3b82f6", to: "rgba(96, 165, 250, 0.95)" },
+                          "cosmic-purple": { from: "#8b5cf6", to: "rgba(167, 139, 250, 0.95)" },
+                          "cosmic-teal": { from: "#14b8a6", to: "rgba(45, 212, 191, 0.95)" },
+                          "cosmic-pink": { from: "#ec4899", to: "rgba(244, 114, 182, 0.95)" },
+                          "cosmic-cyan": { from: "#06b6d4", to: "rgba(34, 211, 238, 0.95)" },
+                          "cosmic-orange": { from: "#f97316", to: "rgba(251, 146, 60, 0.95)" },
+                          "cosmic-yellow": { from: "#10b981", to: "rgba(238, 255, 0, 0.98)" },
                         };
                         const colors = colorMap[category.color] || colorMap["cosmic-blue"];
-                        
+
                         return (
                           <div key={skill.name}>
                             <div className="flex justify-between mb-1">
@@ -735,14 +896,33 @@ export default function Home() {
                   <p className="mb-2 text-xs uppercase tracking-widest text-cosmic-purple">Education</p>
                   <h2 id="education-heading" className="text-xl font-semibold text-primary mb-4 title-glow">Academic Background</h2>
                   <div className="space-y-4">
+                    {/* Master's Degree */}
                     <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-6">
                       <GraduationCap className="h-6 w-6 text-cosmic-purple mb-3" />
-                      <h3 className="text-lg font-semibold text-primary mb-1">Bachelor's degree, Computer Science</h3>
-                      <p className="text-cosmic-cyan mb-1">Grupo Educational UNIS</p>
-                      <p className="text-secondary mb-2">Brazil</p>
-                      <p className="text-sm text-muted flex items-center gap-2">
+                      <h3 className="text-lg font-semibold text-primary mb-1">Master of Software Engineering</h3>
+                      <p className="text-cosmic-cyan mb-1">Ivan Franko National University of Lviv</p>
+                      <p className="text-secondary mb-2 flex items-center gap-1">
+                        <MapPin className="h-3 w-3" />
+                        Lviv, Ukraine
+                      </p>
+                      <p className="text-sm text-muted flex items-center gap-2 mb-3">
                         <Clock className="h-4 w-4" />
-                        2020 – 2023
+                        09/2013 – 12/2015
+                      </p>
+                    </div>
+
+                    {/* Bachelor's Degree */}
+                    <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-6">
+                      <GraduationCap className="h-6 w-6 text-cosmic-purple mb-3" />
+                      <h3 className="text-lg font-semibold text-primary mb-1">Bachelor of Computer Science</h3>
+                      <p className="text-cosmic-cyan mb-1">Lviv Polytechnic National University</p>
+                      <p className="text-secondary mb-2 flex items-center gap-1">
+                        <MapPin className="h-3 w-3" />
+                        Lviv, Ukraine
+                      </p>
+                      <p className="text-sm text-muted flex items-center gap-2 mb-3">
+                        <Clock className="h-4 w-4" />
+                        09/2009 – 06/2013
                       </p>
                     </div>
                   </div>
@@ -757,8 +937,7 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5">
                       {[
-                        { lang: "Italian", level: "Native", proficiency: 100 },
-                        { lang: "Portuguese", level: "Native", proficiency: 100 },
+                        { lang: "Ukrainian", level: "Native", proficiency: 100 },
                         { lang: "English", level: "Fluent", proficiency: 95 }
                       ].map((l) => (
                         <div key={l.lang} className="flex justify-between items-center text-sm py-2 border-b border-white/5 last:border-0">
@@ -771,8 +950,15 @@ export default function Home() {
                       <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-4 flex items-start gap-3">
                         <Award className="h-5 w-5 text-cosmic-orange mt-0.5 flex-shrink-0" />
                         <div>
+                          <p className="text-sm text-secondary font-medium">.NET Development & ASP.NET Core</p>
+                          <p className="text-xs text-muted mt-1">Skills: .NET, ASP.NET Core, C#, REST APIs, SQL Server</p>
+                        </div>
+                      </div>
+                      <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-4 flex items-start gap-3">
+                        <Award className="h-5 w-5 text-cosmic-orange mt-0.5 flex-shrink-0" />
+                        <div>
                           <p className="text-sm text-secondary font-medium">Node.js: Creating a REST API with Express and MongoDB</p>
-                          <p className="text-xs text-muted mt-1">Skills: Back-End Web Development, Node.js, Express.js, MongoDB</p>
+                          <p className="text-xs text-muted mt-1">Skills: Back-End Development, Node.js, Express.js, MongoDB</p>
                         </div>
                       </div>
                       <div className="rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-4 flex items-start gap-3">
@@ -911,35 +1097,35 @@ export default function Home() {
             <AnimatedText animation="fade-in-up" delay={0.2}>
               <div className="grid gap-4 sm:grid-cols-3 mb-10">
                 <a
-                  href="mailto:eduardooliveiira3077@gmail.com"
+                  href="mailto:yuriy.upwork02@gmail.com"
                   className="group rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5 hover:border-cosmic-blue/30 transition-all card-hover"
-                  aria-label="Send email to Eduardo"
+                  aria-label="Send email to Yurii"
                 >
                   <Mail className="h-6 w-6 text-cosmic-blue mx-auto mb-3" />
                   <p className="text-xs text-muted mb-1">Email</p>
-                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">eduardooliveiira3077@gmail.com</p>
+                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">yuriy.upwork02@gmail.com</p>
                 </a>
                 <a
-                  href="https://wa.me/5511934843013"
+                  href="https://wa.me/380999081714"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5 hover:border-cosmic-purple/30 transition-all card-hover"
                   aria-label="Contact on WhatsApp"
                 >
                   <Phone className="h-6 w-6 text-cosmic-purple mx-auto mb-3" />
-                  <p className="text-xs text-muted mb-1">Phone</p>
-                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">+55 11 93484 3013</p>
+                  <p className="text-xs text-muted mb-1">WhatsApp</p>
+                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">+380 99 908 1714</p>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/eduardo-oliveira"
+                  href="https://t.me/yurii_kravchuk1004"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group rounded-xl border border-white/12 bg-black/40 backdrop-blur-2xl p-5 hover:border-cosmic-pink/30 transition-all card-glow"
-                  aria-label="Contact on LinkedIn"
+                  aria-label="Contact on Telegram"
                 >
                   <Send className="h-6 w-6 text-cosmic-pink mx-auto mb-3" />
-                  <p className="text-xs text-muted mb-1">LinkedIn</p>
-                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">in/eduardo-oliveira</p>
+                  <p className="text-xs text-muted mb-1">Telegram</p>
+                  <p className="text-sm text-secondary group-hover:text-primary transition-colors">@yurii_kravchuk1004</p>
                 </a>
               </div>
             </AnimatedText>
@@ -948,7 +1134,7 @@ export default function Home() {
             <AnimatedText animation="scale-in-glow" delay={0.3}>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center mb-12">
                 <a
-                  href="mailto:eduardooliveiira3077@gmail.com?subject=Project%20Inquiry&body=Hi%20Eduardo%2C%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.%0A%0AProject%20Type%3A%20%0ABudget%3A%20%0ATimeline%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
+                  href="mailto:yuriy.upwork02@gmail.com?subject=Project%20Inquiry&body=Hi%20Yurii%2C%0A%0AI'm%20interested%20in%20discussing%20a%20project%20with%20you.%0A%0AProject%20Type%3A%20%0ABudget%3A%20%0ATimeline%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
                   className="group rounded-full bg-gradient-to-r from-cosmic-blue to-cosmic-purple px-8 py-4 text-base font-semibold text-white hover:shadow-xl hover:shadow-cosmic-purple/30 transition-all hover:scale-105"
                 >
                   <span className="flex items-center justify-center gap-2">
@@ -958,13 +1144,13 @@ export default function Home() {
                   </span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/eduardo-oliveira"
+                  href="https://t.me/yurii_kravchuk1004"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-white/15 px-8 py-4 text-base font-medium text-secondary hover:border-white/30 hover:text-primary transition-all flex items-center justify-center gap-2"
                 >
                   <Send className="h-5 w-5" />
-                  Connect on LinkedIn
+                  Connect on Telegram
                 </a>
               </div>
             </AnimatedText>
@@ -985,10 +1171,10 @@ export default function Home() {
             {/* Footer */}
             <footer className="text-center">
               <p className="text-sm text-muted mb-2">
-                © {new Date().getFullYear()} Eduardo Oliveira. Built with Next.js, Three.js & ❤️
+                © {new Date().getFullYear()} Yurii Kravchuk. Built with Next.js, Three.js & ❤️
               </p>
               <p className="text-xs text-muted">
-                Suzano, Brazil • Open to remote opportunities worldwide
+                Lviv, Ukraine • Open to remote opportunities worldwide
               </p>
             </footer>
           </div>

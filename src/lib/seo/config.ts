@@ -2,55 +2,60 @@
 // Following Google's SEO Starter Guide best practices
 
 export const siteConfig = {
-    name: "Eduardo Oliveira - Senior Software Engineer Portfolio",
-    title: "Eduardo Oliveira | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
-    description: "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
+    name: "Yurii Kravchuk - Senior Full-Stack Developer Portfolio",
+    title: "Yurii Kravchuk | Senior Full-Stack Developer | Web, Mobile & AI Solutions",
+    description: "Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. Specializes in AI systems, LLM integrations, automation tools, React, Next.js, Node.js, Python, React Native, Flutter, and cloud infrastructure. Based in Lviv, Ukraine.",
     url: "https://hugomarangao.dev",
     ogImage: "/images/seo/og-image.png",
     keywords: [
-        "Senior Software Engineer",
+        "Senior Full-Stack Developer",
         "Full Stack Developer",
         "React Developer",
+        "Next.js Developer",
         "React Native Developer",
         "Flutter Developer",
-        "Next.js Developer",
         "Node.js Developer",
         "Python Developer",
+        "AI Developer",
+        "LLM Integration",
         "Mobile App Developer",
         "Web Developer",
         "Portfolio",
-        "Eduardo Oliveira",
-        "Brazil Software Engineer",
-        "Suzano Software Engineer"
+        "Yurii Kravchuk",
+        "Ukraine Software Engineer",
+        "Lviv Software Engineer"
     ],
     author: {
-        name: "Eduardo Oliveira",
-        email: "eduardooliveiira3077@gmail.com",
+        name: "Yurii Kravchuk",
+        email: "yurii.kravchuk@example.com",
         url: "https://hugomarangao.dev"
     },
     social: {
-        github: "https://github.com/eduardo3071",
-        linkedin: "https://www.linkedin.com/in/eduardo-oliveira"
+        github: "https://github.com/yuriikravchuk",
+        linkedin: "https://www.linkedin.com/in/yurii-kravchuk"
     }
 };
 
 export const pages = {
     home: {
-        title: "Eduardo Oliveira | Senior Software Engineer | Full Stack Developer | Mobile & Web Apps",
-        description: "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. View my portfolio of successful projects.",
+        title: "Yurii Kravchuk | Senior Full-Stack Developer | Web, Mobile & AI Solutions",
+        description: "Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. Specializes in AI systems, LLM integrations, automation tools, and full-stack development. View my portfolio of successful projects.",
         keywords: [
-            "senior software engineer portfolio",
+            "senior full-stack developer portfolio",
             "full stack developer",
             "react developer",
+            "next.js developer",
             "react native developer",
             "flutter developer",
             "mobile app development",
             "web development",
+            "ai developer",
+            "llm integration",
             "node.js developer",
             "python developer",
-            "eduardo oliveira",
-            "brazil software engineer",
-            "suzano software engineer"
+            "yurii kravchuk",
+            "ukraine software engineer",
+            "lviv software engineer"
         ],
         canonical: "/",
         ogImage: "/images/seo/home-og.png"
@@ -97,9 +102,9 @@ export const structuredData = {
     person: {
         "@context": "https://schema.org",
         "@type": "Person",
-        name: "Eduardo Oliveira",
-        jobTitle: "Senior Software Engineer",
-        description: "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms",
+        name: "Yurii Kravchuk",
+        jobTitle: "Senior Full-Stack Developer",
+        description: "Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. Specializes in AI systems, LLM integrations, automation tools, and full-stack development.",
         url: siteConfig.url,
         image: `${siteConfig.url}/images/seo/profile.png`,
         sameAs: [
@@ -108,18 +113,35 @@ export const structuredData = {
         ],
         knowsAbout: [
             "React",
-            "React Native",
             "Next.js",
+            "Angular",
+            "Vue.js",
+            "React Native",
             "Flutter",
+            "Swift",
+            "Kotlin",
             "Node.js",
             "Express.js",
             "NestJS",
             "Python",
             "FastAPI",
-            "Django",
+            "PHP",
+            "Laravel",
+            "GraphQL",
+            "REST APIs",
             "PostgreSQL",
+            "MySQL",
             "MongoDB",
+            "Firebase",
+            "Supabase",
             "AWS",
+            "AI/LLM Integration",
+            "OpenAI",
+            "Automation",
+            "D3.js",
+            "Jest",
+            "Cypress",
+            "Unity",
             "Mobile Development",
             "Web Development",
             "Full Stack Development"
@@ -140,7 +162,7 @@ export const structuredData = {
         "@context": "https://schema.org",
         "@type": "CreativeWork",
         name: "Developer Portfolio",
-        description: "Portfolio showcasing full stack development projects",
+        description: "Portfolio showcasing full stack development projects, AI/LLM integrations, and mobile applications",
         creator: {
             "@type": "Person",
             name: siteConfig.author.name

@@ -30,14 +30,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   // Primary Meta Tags
   title: {
-    default: "Eduardo Oliveira | Senior Software Engineer - Full Stack Developer",
-    template: "%s | Eduardo Oliveira",
+    default: "Yurii Kravchuk | Senior Full-Stack Developer - Web, Mobile & AI Solutions",
+    template: "%s | Yurii Kravchuk",
   },
   description:
-    "Eduardo Oliveira is an Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP. Based in Suzano, Brazil.",
+    "Yurii Kravchuk is a Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. Specializes in AI systems, LLM integrations, automation tools, React, Next.js, Node.js, Python, React Native, Flutter, and cloud infrastructure. Based in Lviv, Ukraine.",
   keywords: [
-    "Eduardo Oliveira",
-    "Senior Software Engineer",
+    "Yurii Kravchuk",
+    "Senior Full-Stack Developer",
     "Full Stack Developer",
     "React Developer",
     "React Native Developer",
@@ -49,29 +49,31 @@ export const metadata: Metadata = {
     "NestJS Developer",
     "Mobile Developer",
     "Web Developer",
-    "Brazil Software Engineer",
-    "Suzano Software Engineer",
+    "AI Developer",
+    "LLM Integration",
+    "Ukraine Software Engineer",
+    "Lviv Software Engineer",
     "Cross-Platform Mobile Apps",
   ],
-  authors: [{ name: "Eduardo Oliveira", url: "https://hugomarangao.dev" }],
-  creator: "Eduardo Oliveira",
-  publisher: "Eduardo Oliveira",
+  authors: [{ name: "Yurii Kravchuk", url: "https://hugomarangao.dev" }],
+  creator: "Yurii Kravchuk",
+  publisher: "Yurii Kravchuk",
 
   // Open Graph Meta Tags (for social sharing)
   openGraph: {
     type: "website",
     locale: "en_IE",
     url: "https://hugomarangao.dev",
-    siteName: "Eduardo Oliveira Portfolio",
-    title: "Eduardo Oliveira | Senior Software Engineer - Full Stack Developer",
+    siteName: "Yurii Kravchuk Portfolio",
+    title: "Yurii Kravchuk | Senior Full-Stack Developer - Web, Mobile & AI Solutions",
   description:
-    "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records.",
+    "Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. Specializes in AI systems, LLM integrations, automation tools, and full-stack development.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Eduardo Oliveira - Senior Software Engineer Portfolio",
+        alt: "Yurii Kravchuk - Senior Full-Stack Developer Portfolio",
       },
     ],
   },
@@ -79,11 +81,11 @@ export const metadata: Metadata = {
   // Twitter Card Meta Tags
   twitter: {
     card: "summary_large_image",
-    title: "Eduardo Oliveira | Senior Software Engineer",
+    title: "Yurii Kravchuk | Senior Full-Stack Developer",
     description:
-      "Senior Software Engineer | React, React Native, Flutter, Node.js, Python Expert",
+      "Senior Full-Stack Developer | React, Next.js, Node.js, Python, AI/LLM, Mobile Apps Expert",
     images: ["/og-image.png"],
-    creator: "@eduardo3071",
+    creator: "@yuriikravchuk",
   },
 
   // Robots and Crawling
@@ -135,75 +137,81 @@ export const metadata: Metadata = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Eduardo Oliveira",
-  jobTitle: "Senior Software Engineer",
+  name: "Yurii Kravchuk",
+  jobTitle: "Senior Full-Stack Developer",
   description:
-    "Experienced Software Engineer with over 5 years of expertise delivering scalable web and mobile solutions across fintech, edtech, SaaS, and AI-driven platforms. Proven track record of enhancing system performance by up to 45% and building high-throughput APIs and data dashboards managing millions of records. Skilled in React, React Native, Flutter, TypeScript, Node.js, Express, and Python, with extensive experience deploying cloud-native applications on AWS and GCP.",
+    "Senior Full-Stack Developer with 10+ years of experience building web, mobile, and cloud applications. Specializes in AI systems, LLM integrations, automation tools, React, Next.js, Node.js, Python, React Native, Flutter, and cloud infrastructure.",
   url: "https://hugomarangao.dev",
-  email: "eduardooliveiira3077@gmail.com",
-  telephone: "+5511934843013",
+  email: "yurii.kravchuk@example.com",
+  telephone: "+380XXXXXXXXX",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Suzano",
-    addressCountry: "Brazil",
+    addressLocality: "Lviv",
+    addressCountry: "Ukraine",
   },
-  alumniOf: [
-    {
-      "@type": "CollegeOrUniversity",
-      name: "Grupo Educational UNIS",
-    }
-  ],
   knowsAbout: [
     "React",
+    "Next.js",
+    "Angular",
+    "Vue.js",
     "React Native",
     "Flutter",
-    "Next.js",
+    "Swift",
+    "Kotlin",
     "Node.js",
     "Express.js",
     "NestJS",
     "Python",
     "FastAPI",
-    "Django",
+    "PHP",
+    "Laravel",
+    "GraphQL",
+    "REST APIs",
     "PostgreSQL",
+    "MySQL",
     "MongoDB",
+    "Firebase",
+    "Supabase",
     "AWS",
+    "AI/LLM Integration",
+    "OpenAI",
+    "Automation",
+    "D3.js",
+    "Jest",
+    "Cypress",
+    "Unity",
     "Mobile App Development",
     "Web Development",
     "Full Stack Development",
   ],
-  sameAs: ["https://www.linkedin.com/in/eduardo-oliveira"],
-  worksFor: {
-    "@type": "Organization",
-    name: "Grupo Conque",
-  },
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Eduardo Oliveira Portfolio",
+  name: "Yurii Kravchuk Portfolio",
   url: "https://hugomarangao.dev",
   description:
-    "Portfolio website of Eduardo Oliveira, a Senior Software Engineer specializing in full stack web and mobile development.",
+    "Portfolio website of Yurii Kravchuk, a Senior Full-Stack Developer specializing in web, mobile, cloud applications, and AI/LLM integrations.",
   author: {
     "@type": "Person",
-    name: "Eduardo Oliveira",
+    name: "Yurii Kravchuk",
   },
 };
 
 const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Eduardo Oliveira - Software Engineering Services",
+  name: "Yurii Kravchuk - Full-Stack Development Services",
   description:
-    "Professional software engineering services specializing in full stack web and mobile development, scalable applications, and cloud-native solutions.",
+    "Professional full-stack development services specializing in web, mobile, cloud applications, AI/LLM integrations, automation tools, and scalable solutions.",
   provider: {
     "@type": "Person",
-    name: "Eduardo Oliveira",
+    name: "Yurii Kravchuk",
   },
   areaServed: {
     "@type": "Country",
-    name: "Brazil",
+    name: "Ukraine",
   },
   serviceType: [
     "Mobile App Development",

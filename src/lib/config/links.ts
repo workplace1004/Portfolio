@@ -11,12 +11,12 @@ export const links = {
     website: "https://hugomarangao.dev",
 
     // Social Media
-    github: "https://github.com/eduardo3071",
-    linkedin: "https://www.linkedin.com/in/eduardo-oliveira",
+    github: "https://github.com/yuriikravchuk",
+    linkedin: "https://www.linkedin.com/in/yurii-kravchuk",
 
     // Contact
-    email: "eduardooliveiira3077@gmail.com",
-    emailHref: "mailto:eduardooliveiira3077@gmail.com",
+    email: "yurii.kravchuk@example.com", // Update with your email
+    emailHref: "mailto:yurii.kravchuk@example.com",
 
     // Internal Pages
     home: "/",
@@ -39,14 +39,14 @@ export const socialMedia = [
         name: "GitHub",
         url: links.github,
         icon: "github", // For icon components
-        username: "@eduardo3071",
+        username: "@yuriikravchuk",
         color: "#333",
     },
     {
         name: "LinkedIn",
         url: links.linkedin,
         icon: "linkedin",
-        username: "Eduardo Oliveira",
+        username: "Yurii Kravchuk",
         color: "#0077B5",
     },
 ];
@@ -55,9 +55,11 @@ export const socialMedia = [
 export const contact = {
     email: links.email,
     emailHref: links.emailHref,
-    phone: "+55 11 93484 3013", // Add your phone number if you want
-    phoneHref: "tel:+5511934843013",
-    location: "Suzano, Brazil", // Your location
+    phone: "+380 99 908 1714",
+    phoneHref: "https://wa.me/380999081714",
+    whatsapp: "+380 99 908 1714",
+    whatsappHref: "https://wa.me/380999081714",
+    location: "Lviv, Ukraine",
 };
 
 // Navigation Links
