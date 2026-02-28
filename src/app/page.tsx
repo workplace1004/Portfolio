@@ -23,6 +23,37 @@ import {
 // ==========================================
 
 const PROJECTS = [
+
+  {
+    title: "B2B E-commerce Platform",
+    description: "HAZEL refers to a cloud-based online B2B e-commerce platform that helps businesses sell products and services to other businesses through a digital portal. In this setup, business buyers can log in, browse catalogs, place orders, and manage purchases directly online - similar to how a typical online store works for consumers, but tailored to the needs of professional buyers and sellers.",
+    image: "/images/project/b2b.png",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Node.js", "Docker", "CI/CD"],
+    liveUrl: "https://github.com/workplace1004/B2B-react-frontend",
+    category: "Web / B2B E-commerce",
+    highlights: ["B2B E-commerce", "Inventory management", "Order taking", "Real-time analytics"],
+    color: "cosmic-yellow",
+  },
+  {
+    title: "Astar",
+    description: "Astar is a digital ecosystem that blends symbolic insights and personal reflections with automated tools and real human support to provide meaningful guidance and interactive experiences in one unified platform.",
+    image: "/images/project/astar.png",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Node.js", "OpenAI", "Python", "FastAPI"],
+    // liveUrl: "https://github.com/workplace1004/Assistant-AI",
+    category: "Web / Assistant",
+    highlights: ["Symbolic insights", "Personal reflections", "Automated tools", "Real human support"],
+    color: "cosmic-green",
+  },
+  {
+    title: "Statxt",
+    description: "Statxt is a business texting platform for teams.The goal is to let businesses message customers reliably over SMS/MMS. with a fast inbo for daily conversations and support for campaigns and automation, while keeping compliance and deliverability central (opt-out, consent, auditing, guardrails).",
+    image: "/images/project/statxt.png",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Node.js", "Docker", "CI/CD", "Python", "FastAPI", "Vonage"],
+    liveUrl: "https://statxt.com/",
+    category: "Web / Business Texting",
+    highlights: ["Business texting", "Campaigns", "Automation", "Compliance", "Deliverability"],
+    color: "cosmic-orange",
+  },
   {
     title: "Healthcare Management Platform",
     description: "Healthcare website for the Center of Modern Urology in Kyiv, providing information about doctors, diagnostics, treatments, and clinic locations for patients.",
@@ -31,7 +62,6 @@ const PROJECTS = [
     category: "Web / Healthcare",
     highlights: ["Doctors directory", "Diagnostics & treatments", "Multilingual content", "Clinic locations & contacts"],
     color: "cosmic-blue",
-    metrics: { city: "Kyiv", clinics: "2" },
     liveUrl: "https://urology.net.ua/"
   },
   {
@@ -43,7 +73,6 @@ const PROJECTS = [
     category: "Mobile / Shopping",
     highlights: ["Brand subscriptions", "Advanced search & filters", "Safe payments", "Order tracking"],
     color: "cosmic-teal",
-    metrics: { rating: "4.7★", platform: "iPhone" }
   },
   {
     title: "Ecommerce / Marketplace",
@@ -54,7 +83,6 @@ const PROJECTS = [
     category: "Marketplace / E-commerce",
     highlights: ["Catalog & categories", "Discounts", "New arrivals", "Brand pages", "User listings"],
     color: "cosmic-purple",
-    metrics: { region: "UA", focus: "Fashion" }
   },
   {
     title: "Health24 for Patients",
@@ -65,7 +93,6 @@ const PROJECTS = [
     category: "Mobile / Medical",
     highlights: ["Doctor booking", "Medical records", "e-Health integration", "Family accounts"],
     color: "cosmic-orange",
-    metrics: { rating: "4.3★", platform: "iPhone/iPad" }
   },
   {
     title: "LUN Real Estate Platform",
@@ -76,19 +103,17 @@ const PROJECTS = [
     category: "Web / Real Estate",
     highlights: ["New builds & resale", "Rent & sale", "Developer catalog", "Market analytics"],
     color: "cosmic-teal",
-    metrics: { cities: "20+", projects: "400+" }
   },
   {
-    title: "LUN: Sale and Rent Apartments",
-    description: "Mobile app for finding apartments, houses, and all residential real estate in Ukraine. View new builds, secondary market, and rentals in one place. Features 3D models of residential complexes, video room tours, AI-powered search algorithms, and the ability to create and manage your own listings.",
-    image: "/images/project/realestate-mobile.png",
-    technologies: ["React Native", "iOS", "Real Estate", "Maps", "AI Search", "Firebase"],
-    liveUrl: "https://apps.apple.com/us/app/lun-sale-and-rent-apartments/id1508320534",
-    category: "Mobile / Real Estate",
-    highlights: ["3D models & video tours", "AI-powered search", "Map with metro schematics", "Create listings"],
+    title: "Restaurant POS System",
+    description: "Restaurant POS system for managing restaurant operations, including inventory, orders, payments, and reporting. Features include table management, order taking, payment processing, and real-time analytics.",
+    image: "/images/project/restaurant_pos_system.png",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "SQlite", "Socket.io", "Electron", "Node.js"],
+    liveUrl: "https://github.com/workplace1004/Restaurant-POS-System-Electron",
+    category: "Desktop Application / Restaurant",
+    highlights: ["Inventory management", "Order taking", "Payment processing", "Real-time analytics"],
     color: "cosmic-purple",
-    metrics: { rating: "4.8★", platform: "iPhone" }
-  }
+  },
 ];
 
 const SERVICES = [
@@ -155,6 +180,8 @@ const SKILLS = {
       { name: "Apollo", level: 85 },
       { name: "HTML5", level: 95 },
       { name: "CSS3", level: 95 },
+      { name: "Material UI", level: 85 },
+      { name: "Three.js", level: 85 },
     ]
   },
   backend: {
@@ -176,6 +203,7 @@ const SKILLS = {
       { name: "REST APIs", level: 95 },
       { name: "GraphQL APIs", level: 85 },
       { name: "JWT Authentication", level: 95 },
+      { name: "Socket.io", level: 85 },
     ]
   },
   mobile: {
@@ -214,6 +242,7 @@ const SKILLS = {
       { name: "Firebase", level: 90 },
       { name: "Supabase", level: 85 },
       { name: "Redis", level: 85 },
+      { name: "SQlite", level: 90 },
     ]
   },
   devops: {
@@ -582,7 +611,7 @@ export default function Home() {
                 return (
                   <AnimatedText key={project.title} animation="fade-in-up" delay={0.1 * i}>
                     <article className="group relative overflow-hidden rounded-2xl border border-white/12 bg-black/40 backdrop-blur-2xl transition-all hover:border-cosmic-purple/30 hover:shadow-2xl hover:shadow-cosmic-purple/10 card-glow">
-                      <div className={`grid gap-0 items-stretch ${isEven ? 'md:grid-cols-[55%_45%]' : 'md:grid-cols-[45%_55%]'}`}>
+                      <div className={`grid gap-0 items-stretch ${isEven ? 'md:grid-cols-[60%_40%]' : 'md:grid-cols-[40%_60%]'}`}>
                         {/* Image Section */}
                         {project.image && (
                           <div className={`relative h-72 md:h-full overflow-hidden ${isEven ? 'md:order-1' : 'md:order-2'}`}>
@@ -648,7 +677,7 @@ export default function Home() {
                           </div>
 
                           {/* Tech Stack */}
-                          <div className="flex flex-wrap gap-2 border-t border-white/8">
+                          <div className="flex flex-wrap gap-2 border-t border-white/8 pt-5 items-center">
                             {project.technologies.map((tech) => (
                               <span key={tech} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-secondary hover:border-cosmic-blue/40 hover:text-cosmic-blue hover:bg-cosmic-blue/10 transition-all cursor-default">
                                 {tech}
@@ -658,7 +687,7 @@ export default function Home() {
 
                           {/* Metrics (if available) */}
                           {project.metrics && (
-                            <div className="mt-6 border-t border-white/8 flex flex-wrap gap-6 text-sm">
+                            <div className="border-t border-white/8 flex flex-wrap gap-6 text-sm">
                               {Object.entries(project.metrics).map(([key, value]) => (
                                 <div key={key} className="flex items-center gap-2">
                                   <span className="text-cosmic-cyan font-semibold text-base">{value}</span>
