@@ -22,7 +22,19 @@ import {
 // DATA - Projects, Skills, Experience
 // ==========================================
 
-const PROJECTS = [
+type ProjectItem = {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  liveUrl?: string;
+  category: string;
+  highlights: string[];
+  color: string;
+  metrics?: Record<string, string | number>;
+};
+
+const PROJECTS: ProjectItem[] = [
 
   {
     title: "B2B E-commerce Platform",
