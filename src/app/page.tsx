@@ -717,7 +717,7 @@ export default function Home() {
             </div>
 
             {/* View More */}
-            <AnimatedText animation="fade-in-up" delay={0.5} className="mt-10 text-center">
+            {/* <AnimatedText animation="fade-in-up" delay={0.5} className="mt-10 text-center">
               <a
                 href="https://github.com/yuriikravchuk"
                 target="_blank"
@@ -728,7 +728,7 @@ export default function Home() {
                 View more on GitHub
                 <ArrowRight className="h-4 w-4" />
               </a>
-            </AnimatedText>
+            </AnimatedText> */}
           </div>
         </section>
 
@@ -1123,7 +1123,7 @@ export default function Home() {
         >
           <div className="mx-auto max-w-3xl text-center">
 
-            <AnimatedText animation="fade-in-up">
+            {/* <AnimatedText animation="fade-in-up">
               <p className="mb-2 text-xs uppercase tracking-widest text-cosmic-blue">Get in Touch</p>
               <h2 id="contact-heading" className="text-2xl font-semibold text-primary mb-3 md:text-4xl title-glow">
                 Let's Build Something Amazing
@@ -1134,7 +1134,6 @@ export default function Home() {
               </p>
             </AnimatedText>
 
-            {/* Contact Cards */}
             <AnimatedText animation="fade-in-up" delay={0.2}>
               <div className="grid gap-4 sm:grid-cols-3 mb-10">
                 <a
@@ -1171,7 +1170,6 @@ export default function Home() {
               </div>
             </AnimatedText>
 
-            {/* Primary CTA */}
             <AnimatedText animation="scale-in-glow" delay={0.3}>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center mb-12">
                 <a
@@ -1194,9 +1192,8 @@ export default function Home() {
                   Connect on Telegram
                 </a>
               </div>
-            </AnimatedText>
+            </AnimatedText> */}
 
-            {/* Stats Reminder */}
             <AnimatedText animation="fade-in-up" delay={0.4}>
               <div className="flex flex-wrap justify-center gap-8 mb-12 py-6 border-y border-white/8">
                 {STATS.map((stat) => (
@@ -1209,7 +1206,6 @@ export default function Home() {
               </div>
             </AnimatedText>
 
-            {/* Footer */}
             <footer className="text-center">
               <p className="text-sm text-muted mb-2">
                 © {new Date().getFullYear()} Yurii Kravchuk. Built with Next.js, Three.js & ❤️
